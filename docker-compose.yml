@@ -8,8 +8,17 @@ services:
       - '.:/var/www/vote/'
     environment:
       - "VIRTUAL_HOST=vote.agares.info"
+    restart: always
+    networks:
+        - frontproxy_default
+        - default
+
+    networks:
+        frontproxy_default:
+            external: true
 
   php:
     build: docker/php
     volumes:
       - '.:/var/www/vote/'
+    restart: always
