@@ -1,0 +1,88 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css");
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&subset=latin-ext');
+
+body,
+html,
+button {
+    background-color: #111;
+    color: rgb(235, 235, 255);
+    font-family: Lato, sans-serif;
+}
+
+a {
+    color: rgb(83, 83, 98);
+    text-decoration: none;
+}
+
+h1,
+h2 {
+    color: #ff1885;
+    text-align: center;
+    margin: 0;
+}
+
+h1 {
+    font-size: 7rem;
+    font-weight: 100;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+ul {
+    list-style: none;
+    margin: 1rem 0 0;
+    padding: 0;
+}
+
+li {
+    text-align: left;
+    padding: 0.3rem;
+    list-style-type: circle;
+}
+
+form {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    background-color: #ff1885;
+    border: 0 none;
+    padding: 1rem;
+    width: 10rem;
+    font-size: 1.2rem;
+}
+
+.content {
+    width: 50%;
+    max-width: 30rem;
+    min-width: 24rem;
+    margin: 0 auto;
+}
+
+.results {
+    width: 100%;
+}
+
+.results__bar, .results__bar__fill {
+    height: 1.25rem;
+}
+
+.results__bar {
+    background-color: rgb(127, 12, 66);
+    margin-top: 2rem;
+}
+
+.results__bar__fill {
+    background-color: #ff1885;
+    display: inline-block;
+}
+
+.footer {
+    margin-top: 1rem;
+    text-align: center;
+}
