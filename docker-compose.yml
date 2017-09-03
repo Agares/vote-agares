@@ -13,12 +13,12 @@ services:
         - frontproxy_default
         - default
 
-    networks:
-        frontproxy_default:
-            external: true
-
   php:
     build: docker/php
     volumes:
       - '.:/var/www/vote/'
     restart: always
+
+networks:
+    frontproxy_default:
+        external: true
